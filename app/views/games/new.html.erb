@@ -1,0 +1,21 @@
+<h1><span>START</span> A NEW GAME</h1>
+<div class="container">
+  <div class="card"><%= @letters[0] %></div>
+  <div class="card"><%= @letters[1] %></div>
+  <div class="card"><%= @letters[2] %></div>
+  <div class="card"><%= @letters[3] %></div>
+  <div class="card"><%= @letters[4] %></div>
+  <div class="card"><%= @letters[5] %></div>
+  <div class="card"><%= @letters[6] %></div>
+  <div class="card"><%= @letters[7] %></div>
+  <div class="card"><%= @letters[8] %></div>
+  <div class="card"><%= @letters[9] %></div>
+</div>
+
+<form action="/score" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" name="word" id="type">
+  <input type="submit" value="PLAY" id="click">
+</form>
+
+
